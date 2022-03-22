@@ -1,6 +1,11 @@
 .App-header {
   margin: 30px;
+  text-align: center;
+  color: pink;
+  font-size: 36px;
+  font-weight: bold;
 }
-h1 {
+.App-footer {
+  margin-top: 20px;
   text-align: center;
 }
