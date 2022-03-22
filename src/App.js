@@ -10,7 +10,7 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <smaller>Code by Sam Fuentes, open-source on GitHub.</smaller>
+          Code by Sam Fuentes, open-source on GitHub.
         </footer>
       </div>
     </div>
