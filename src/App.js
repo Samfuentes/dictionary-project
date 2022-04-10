@@ -40,7 +40,10 @@ function App() {
           <Dictionary defaultKeyword="coffee" />
         </main>
         <footer className="App-footer">
-          Code by Sam Fuentes, open-source on GitHub.
+          Code by Sam Fuentes,{" "}
+          <a href="https://github.com/Samfuentes/Portafolio">
+            open-sourced on GitHub.
+          </a>
         </footer>
       </div>
     </div>
