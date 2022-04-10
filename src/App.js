@@ -37,7 +37,7 @@ function App() {
         </div>
         <header className="App-header">Dictionary</header>
         <main>
-          <Dictionary defaultKeyword="happy" />
+          <Dictionary defaultKeyword="coffee" />
         </main>
         <footer className="App-footer">
           Code by Sam Fuentes, open-source on GitHub.
