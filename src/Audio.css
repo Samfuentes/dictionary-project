@@ -1,0 +1,7 @@
+.Audio .icon {
+  font-size: 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Audio .icon:hover {
+  color: #d85f07;
+}

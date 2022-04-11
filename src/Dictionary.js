@@ -20,7 +20,21 @@ export default function Dictionary(props) {
   function search() {
     //documentation: https://api.dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios
+      .get(apiUrl)
+      .then(handleResponse)
+      .catch(function (error) {
+        if (error.response) {
+          // Request made and server responded
+          alert("We can't find the meaning of this word... try another.");
+        } else if (error.request) {
+          // The request was made but no response was received
+          alert("Oops.. it looks like something went wrong");
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          alert("Oops.. it looks like something went wrong");
+        }
+      });
 
     let pexelsApiKey =
       "563492ad6f917000010000019fcb51b11b86496ea1123bf655e7c4fd";
@@ -50,7 +64,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h2>What are you looking? </h2>
+          <h2>What are you looking for? </h2>
           <form onSubmit={handleSubmit}>
             <input
               type="search"
@@ -63,7 +77,6 @@ export default function Dictionary(props) {
             suggested words: sunset, wine, yoga, forest,plant...{" "}
           </div>{" "}
         </section>
-
         <Results results={definition} />
         <Photos photos={photos} />
       </div>
