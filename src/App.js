@@ -5,36 +5,35 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div class="container">
-          <nav class="d-flex justify-content-between">
-            <a href="/" class="d-none d-md-block" title="Homepage">
-              Sam's Portafolio
-            </a>
-            <ul>
-              <li>
-                <a href="https://www.samfuentesg.com/" title="Homepage">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.samfuentesg.com/#projects"
-                  title="Sam's Projects"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.samfuentesg.com/#contact"
-                  title="Contact Sam"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav className="navbar sticky-top">
+          <a href="/" className="d-none d-md-block" title="Homepage">
+            Sam's Portafolio
+          </a>
+          <ul>
+            <li>
+              <a href="https://www.samfuentesg.com/" title="Homepage">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.samfuentesg.com/#projects"
+                title="Sam's Projects"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.samfuentesg.com/#contact"
+                title="Contact Sam"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
         <header className="App-header">Dictionary</header>
         <main>
           <Dictionary defaultKeyword="coffee" />

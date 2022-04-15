@@ -4,7 +4,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 .App-header {
-  margin: 30px;
+  margin: 30px 30px 20px 30px;
   text-align: left;
   color: #eeab00;
   font-size: 36px;
@@ -15,6 +15,7 @@
   text-align: center;
 }
 nav {
+  background-color: white;
   font-size: 20px;
   padding: 20px;
 }
@@ -36,4 +37,9 @@ nav a {
 
 nav a:hover {
   color: var(--accent-color2);
+}
+
+.App-footer {
+  padding: 5px;
+  margin-bottom: 15px;
 }
